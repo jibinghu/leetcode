@@ -20,7 +20,7 @@ class Solution{
                 if (divisor == -1) {
                     return INT_MAX;
                 }
-        }
+            }
 
             // 溢出判断
             if (dividend == MAX_INT && divisor == -1)
