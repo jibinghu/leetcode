@@ -7,3 +7,12 @@
 **<a href="https://leetcode.cn/problems/w3tCBm/description/?envType=problem-list-v2&envId=TP9kvfRn">003. 比特位计数</a>**
 
 
+
+
+
+
+==========
+
+
+
+**<a href="https://leetcode.cn/problems/trapping-rain-water/solutions/">42. 接雨水</a>**
