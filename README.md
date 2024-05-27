@@ -16,3 +16,7 @@
 
 
 **<a href="https://leetcode.cn/problems/trapping-rain-water/solutions/">42. 接雨水</a>**
+
+**<a href="https://leetcode.cn/problems/3sum/description/?fileGuid=tKQP6HRHJwJyWpgd">42. 接雨水</a>**
+
+
