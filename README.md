@@ -34,3 +34,8 @@
 
 **<a href="https://leetcode.cn/problems/remove-element/">27. 移除元素</a>**
 
+---
+
+#### 算法
+
+蒙特卡洛算法
