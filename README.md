@@ -34,8 +34,13 @@
 
 **<a href="https://leetcode.cn/problems/remove-element/">27. 移除元素</a>**
 
+**977.有序数组的平方**
+
+**209.长度最小的子数组**
+
 ---
 
 #### 算法
 
 蒙特卡洛算法
+kahn 算法(构造DAG图)
