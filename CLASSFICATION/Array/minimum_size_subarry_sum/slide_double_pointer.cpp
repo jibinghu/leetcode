@@ -10,15 +10,13 @@ class Solution{
             for (int j=0; j<nums.size();j++){
                 sum += nums.at(j);
                 while(sum >= s){
+                    // 注意这里的i并没有每次回溯到0位置
                     current = j - i + 1;
                     result = result > current ? current : result;
                     sum -= nums.at(i++);
                 }
-                // 这里是我觉得还可以优化的地方，第一次找到当前最小窗口后直接固定；
-                // if(result != INT_MAX)
-                //     sum -= nums.at(i++);
             }
-            return result;
+            return result == INT_MAX ? 0 : result;
         }
 };
 
