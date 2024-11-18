@@ -2,8 +2,10 @@ import torch
 import triton
 import triton.language as tl
 
+# 利用@triton.jit进行triton编译
 @triton.jit
 def demo1_kernel(x_ptr, output_ptr):
+    # [0,8) 数组
     range = tl.arange(0, 8)
     mask = range < 5
     x = tl.load(x_ptr + range, mask, 0)
@@ -12,7 +14,7 @@ def demo1_kernel(x_ptr, output_ptr):
 
 def run_demo1():
     print("Demo1 Output: ")
-    input_tensor = torch.ones(8, dtype=torch.float32).cuda()  # Input tensor on GPU
+    input_tensor = torch.ones((4, 3), dtype=torch.float32).cuda()  # Input tensor on GPU
     output_tensor = torch.zeros(8, dtype=torch.float32).cuda()  # Output tensor on GPU
 
     demo1_kernel[(1,)](input_tensor, output_tensor)  # Launch the kernel
