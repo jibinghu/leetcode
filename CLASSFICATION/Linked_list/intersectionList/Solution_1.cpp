@@ -18,10 +18,18 @@ class Solution{
             }
             currentA = headA;
             currentB = headB;
-            int recursion = abs(numA - numB);
-            while(recursion--){
+            int lengthDiff = abs(numA - numB);
+            if(numA > numB){
+                while(lengthDiff--){
                 currentA = currentA->next;
+                }
             }
+            else{
+                while(lengthDiff--){
+                currentB = currentB->next;
+                }
+            }
+            
             while(currentA != nullptr && currentB != nullptr){
                 if(currentA==currentB)
                     return currentA;
